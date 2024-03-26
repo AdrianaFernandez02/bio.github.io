@@ -1,0 +1,9 @@
+<ul class="list-style-none f3 container-sm">
+    {% for item in site.data.links %}
+    <li class="mb-3 text-center text-semibold">
+        <a href="{{ item.url }}" class="Link--primary d-block p-3 border rounded-3 color-shadow-small color-bg-subtle">
+            {{ item.text }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
